@@ -16,14 +16,15 @@ h2 {
 
 /* This selector selects ALL anchor tag children of ALL list elements that
 are children of an Unordered Lsit element */
-ul li a, figcaption a {
+ul li a,
+figcaption a {
   text-decoration: none;
   color: inherit;
 }
 
 /* This selector selects only IMMEDIATE (1 level deep) image element children
 of the header element */
-header > img {
+header>img {
   width: 100px;
 }
 
@@ -44,11 +45,11 @@ ol {
 }
 
 input[type="radio"] {
-    -webkit-appearance: none;
-    width: 27px;
-    height: 27px;
-    background-image: url(../assets/stars.png);
-    vertical-align: bottom;
+  -webkit-appearance: none;
+  width: 27px;
+  height: 27px;
+  background-image: url(../assets/stars.png);
+  vertical-align: bottom;
 }
 
 input[type="radio"]:checked {
@@ -57,18 +58,40 @@ input[type="radio"]:checked {
 
 
 input:last-child {
-    background: gold;
+  background: gold;
 }
 
 input:last-child:hover {
-    -webkit-filter: brightness(90%);
+  -webkit-filter: brightness(90%);
 }
 
 ol li:nth-of-type(2n) {
   background-color: whitesmoke;
 }
 
-h2 + .user_review {
-    border-top: 1px solid black;
+h2+.user_review {
+  border-top: 1px solid black;
 }
 
+nav li {
+  display: inline-block;
+  padding: 20px;
+}
+
+header>* {
+  display: inline-block;
+}
+
+body {
+  width: 900px;
+  margin: 0 auto;
+
+}
+
+section {
+  width: 700px;
+}
+
+aside {
+  width: 180px;
+}
